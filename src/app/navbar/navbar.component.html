@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+    <a class="navbar-brand" routerLink="/">Veggishop</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/shopping-cart"> shopping cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login"> Login</a>
+            </li>
+            <br>
+            <br>
+            <li class="btn-group" dropdown>
+                <button id="button-disabled-item" dropdownToggle type="button" class="btn btn-primary dropdown-toggle" aria-controls="dropdown-disabled-item">
+      User Name <span class="caret"></span>
+    </button>
+                <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+                    <a class="dropdown-item" routerLink="/my/orders">My order</a>
+                    <a class="dropdown-item" routerLink="/admin/orders">Manage order</a>
+                    <a class="dropdown-item" routerLink="/admin/products">Manage product</a>
+                    <a class="dropdown-item">Log Out</a>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
